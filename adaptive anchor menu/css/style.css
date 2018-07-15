@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+.header {
+	display: flex;
+	height: 50px;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	width: 100%;
+}
+.logo {
+	width: 20%;
+}
+.menu {
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:center;
+	height: 100%;
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	
+}
+.menu a:hover {
+	opacity: 0.5;
+}
+.section {
+	height: 500px;
+}
+.information {
+	background-color: red;
+
+}
+.works {
+	background-color: orange;
+
+}
+.about {
+	background-color: yellow;
+
+}
+.blog {
+	background-color: blue;
+
+}
+.contacts {
+	background-color: green;
+}
+.menu-close {
+	display: none;
+}
+
+@media screen and (max-width: 576px) {
+	.menu {
+		display: flex;
+		position: relative;
+		height: 0;
+		
+		flex-direction: column;
+		background-color: #000;
+		z-index: 10;
+		transition: all 0.4s;
+	}
+	.menu li {
+		display: none;
+	}
+	.menu-close {
+		position: fixed;
+		right: 20px;
+		top: 15px;
+		color: #fff;
+		z-index: 11;
+	}
+	.menu-mob {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 15px;
+		right: 20px;
+		z-index: 5;
+	}
+	.menu-mob span {
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		top: 9px;
+		background-color: #fff;
+	}
+	.menu-mob span::before {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		left: 0;
+		top: -9px;
+		background-color: #fff;
+	}
+	.menu-mob span::after {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		left: 0;
+		top: 9px;
+		background-color: #fff;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
